@@ -39,6 +39,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      #more {display: none;}
+      </style>
   </head>
   <body>
   
@@ -123,40 +126,7 @@ function includeHTML() {
         <div class="col-md-12">
           <div class="about-content">
             <div class="row">
-              <!--<div class="col-md-6">
-                <div class="our-skill">
-                  <h3>Capacity/Turnover –</h3>                  
-                  <div class="our-skill-content">
-                  <p>After having started in 2002 with a capacity of 250,000 units per Month, company has grown to a capacity of 1.6 million pcs per month across woven and knits segments, after 13 years. Even though the business to USA & Europe is driven by market challenges, still we have grown during the last 5 years in terms of annual turnover and production capacity ‐ </p>
-                    <div class="progress">
-                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" style="" data-transitiongoal="29%">
-                        <span class="progress-title">2013‐2014</span>
-                      </div>
-                  </div>
-                  <div class="progress">
-                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="31%">
-                        <span class="progress-title">2014‐2015</span>
-                      </div>
-                  </div>
-                  <div class="progress">
-                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="29%">
-                        <span class="progress-title">2015‐2016</span>
-                      </div>
-                  </div>
-                  <div class="progress">
-                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="30%">
-                        <span class="progress-title">2016‐2017</span>
-                      </div>
-                  </div>
-                  
-                   <div class="progress">
-                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="32%">
-                        <span class="progress-title">2017‐2018</span>
-                      </div>
-                  </div>
-                  </div>                  
-                </div>
-              </div>-->
+              
               <div class="col-md-6">
                 <div class="why-choose-us">
                   <h3>Our Advantage</h3>
@@ -205,13 +175,16 @@ Water and electricity, which is an extremely important ingredient for industry, 
                       <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>As compared to other African countries, Kenya has:
-
-Abundant availability of skilled labor.
-Well Developed Banking Sector.
-Better equipped and efficiently handled port facilities.
-Better road transport facilities and transport.
-Government also gives facilities and tax benefits to factories working with Export Processing Zones, so the custom clearance and port delays are easily avoided.
-Political Stability.</p>
+                            <ol style="list-style-type:disc;">
+                              <li>Abundant availability of skilled labor.</li>
+                              <li>Well Developed Banking Sector.</li>
+                              <li>Better equipped and efficiently handled port facilities.</li>
+                              <li>Better road transport facilities and transport.</li>
+                              <li>Government also gives facilities and tax benefits to factories working with Export Processing Zones, so the custom clearance and port delays are easily avoided.
+                              </li>
+                              <li>Political Stability.</li>
+                            </ol>
+</p>
                         </div>
                       </div>
                     </div>
@@ -290,9 +263,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
       </div>
     </div>
   </section>
-  <!-- end about -->
-
-  <!-- Start counter -->
+  
   <section id="counter">
     <div class="counter-overlay">
       <div class="container">
@@ -312,8 +283,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                     </div>
                   </div>
                 </div>
-                <!-- End single counter -->
-                <!-- Start single counter -->
+              
                 <div class="col-md-3 col-sm-6">
                   <div class="single-counter">
                     <div class="counter-icon">
@@ -361,11 +331,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
   </section>
  
 
-  <!-- Start Clients brand -->
-  
-  <!-- End Clients brand -->
 
-  <!-- Start latest news -->
   <section id="latest-news">
     <div class="container">
       <div class="row">
@@ -383,14 +349,14 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-1.jpg" alt="image"></a>
+                      <img src="assets/images/blog-img-1.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                     
                   </div>
                   <div class="blog-news-details">
-                    <p>News 1 </p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                   </div>
                 </article>
               </div>
@@ -398,13 +364,13 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-2.jpg" alt="image"></a>
+                    <img src="assets/images/blog-img-2.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 2</p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn2">Read more</button>
                   </div>
                 </article>
               </div>
@@ -412,13 +378,13 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-3.jpg" alt="image"></a>
+                    <img src="assets/images/blog-img-3.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 3</p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn1">Read more</button>
                   </div>
                 </article>
               </div>
@@ -462,4 +428,22 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
 </html>
 <script>
 includeHTML();
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
 </script>
