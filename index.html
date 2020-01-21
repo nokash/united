@@ -39,6 +39,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      #more {display: none;}
+      </style>
   </head>
   <body>
   
@@ -346,14 +349,14 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-1.jpg" alt="image"></a>
+                      <img src="assets/images/blog-img-1.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                     
                   </div>
                   <div class="blog-news-details">
-                    <p>News 1 </p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                   </div>
                 </article>
               </div>
@@ -361,13 +364,13 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-2.jpg" alt="image"></a>
+                    <img src="assets/images/blog-img-2.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 2</p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn2">Read more</button>
                   </div>
                 </article>
               </div>
@@ -375,13 +378,13 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
-                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-3.jpg" alt="image"></a>
+                    <img src="assets/images/blog-img-3.jpg" alt="image">
                   </div>
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 3</p>
-                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="myBtn1">Read more</button>
                   </div>
                 </article>
               </div>
@@ -425,4 +428,22 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
 </html>
 <script>
 includeHTML();
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
 </script>
