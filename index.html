@@ -356,7 +356,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                   </div>
                   <div class="blog-news-details">
                     <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                    <button onclick="myFunction1()" id="myBtn">Read more</button>
                   </div>
                 </article>
               </div>
@@ -369,8 +369,8 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
-                    <button onclick="myFunction()" id="myBtn2">Read more</button>
+                    <p>News 2<span id="dots2">...</span><span id="more2">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction2()" id="myBtn2">Read more</button>
                   </div>
                 </article>
               </div>
@@ -383,7 +383,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <p>News 1 <span id="dots1">...</span><span id="more1">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
                     <button onclick="myFunction()" id="myBtn1">Read more</button>
                   </div>
                 </article>
@@ -429,7 +429,7 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
 <script>
 includeHTML();
 
-function myFunction() {
+function myFunction1() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -442,6 +442,38 @@ function myFunction() {
     dots.style.display = "none";
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";
+  }
+}
+
+function myFunction() {
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("myBtn1");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Read more"; 
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Read less"; 
+    moreText1.style.display = "inline";
+  }
+}
+
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less"; 
+    moreText2.style.display = "inline";
   }
 }
 
