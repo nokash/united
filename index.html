@@ -41,6 +41,8 @@
     <![endif]-->
     <style>
       #more {display: none;}
+      #more1 {display: none;}
+      #more2 {display: none;}
       </style>
   </head>
   <body>
@@ -355,8 +357,8 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                     
                   </div>
                   <div class="blog-news-details">
-                    <p>News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
-                    <button onclick="myFunction1()" id="myBtn">Read more</button>
+                    <p>Latest News <span id="dots">...</span><span id="more">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction1()" id="toggle">Read more</button>
                   </div>
                 </article>
               </div>
@@ -369,8 +371,8 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 2<span id="dots2">...</span><span id="more2">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
-                    <button onclick="myFunction2()" id="myBtn2">Read more</button>
+                    <p>More News<span id="dots2">...</span><span id="more1">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction2()" id="toggle1">Read more</button>
                   </div>
                 </article>
               </div>
@@ -383,8 +385,8 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
                   <div class="blog-news-title">
                   </div>
                   <div class="blog-news-details">
-                    <p>News 1 <span id="dots1">...</span><span id="more1">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
-                    <button onclick="myFunction()" id="myBtn1">Read more</button>
+                    <p>Other News <span id="dots1">...</span><span id="more2">They still wish to continue strengthening this business if enough sales are there & have the capacity to do double digit growth is very short time, the intention behind the business is to Create as many jobs possible but next goal is to have at least 10000 direct Jobs created in near future which means 100000 people get meals every day due to our project, as in Africa the ratio of one direct job to dependents / indirect jobs is 1:10</span></span></p>
+                    <button onclick="myFunction()" id="toggle2">Read more</button>
                   </div>
                 </article>
               </div>
@@ -429,53 +431,52 @@ Dubai, UAE is the hub of the garment industry and we have a strong presence in D
 <script>
 includeHTML();
 
-function myFunction1() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+/*NEWS TOGGLE BUTTONS JS*/
+$(document).ready(function() {
+  $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read more") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read less");
+      $("#more").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read more");
+      $("#more").slideUp();
+    }
+  });
+});
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
+$(document).ready(function() {
+  $("#toggle1").click(function() {
+    var elem = $("#toggle1").text();
+    if (elem == "Read more") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle1").text("Read less");
+      $("#more1").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle1").text("Read more");
+      $("#more1").slideUp();
+    }
+  });
+});
 
-function myFunction() {
-  var dots1 = document.getElementById("dots1");
-  var moreText1 = document.getElementById("more1");
-  var btnText1 = document.getElementById("myBtn1");
 
-  if (dots1.style.display === "none") {
-    dots1.style.display = "inline";
-    btnText1.innerHTML = "Read more"; 
-    moreText1.style.display = "none";
-  } else {
-    dots1.style.display = "none";
-    btnText1.innerHTML = "Read less"; 
-    moreText1.style.display = "inline";
-  }
-}
-
-function myFunction2() {
-  var dots2 = document.getElementById("dots2");
-  var moreText2 = document.getElementById("more2");
-  var btnText2 = document.getElementById("myBtn2");
-
-  if (dots2.style.display === "none") {
-    dots2.style.display = "inline";
-    btnText2.innerHTML = "Read more"; 
-    moreText2.style.display = "none";
-  } else {
-    dots2.style.display = "none";
-    btnText2.innerHTML = "Read less"; 
-    moreText2.style.display = "inline";
-  }
-}
+$(document).ready(function() {
+  $("#toggle2").click(function() {
+    var elem = $("#toggle2").text();
+    if (elem == "Read more") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle2").text("Read less");
+      $("#more2").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle2").text("Read more");
+      $("#more2").slideUp();
+    }
+  });
+});
 
 
 </script>
