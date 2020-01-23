@@ -486,6 +486,8 @@ img {
   padding: 0;
 }
 
+.dropdown:hover .dropdown-menu {display: block;}
+
 .navbar-nav > li > .dropdown-menu > li > a {
   color: #333;
   font-family: "Lato", sans-serif;
