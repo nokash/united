@@ -519,7 +519,7 @@ img {
 .main-slider {
   display: inline;
   float: left;
-  height: 600px;
+  height: 700px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -536,6 +536,7 @@ img {
 
 .single-slide img {
   width: 100%;
+  height: 100%;
 }
 
 .slide-content {
@@ -725,7 +726,14 @@ img {
   color: #555;
   font-size: 15px;
 }
+/* BANNERS */
+.banners{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
+}
 /*--------------------*/
 
 /* ABOUT */
@@ -1614,12 +1622,14 @@ html {
   display: inline;
   float: left;
   width: 100%;
+  padding: 25px 0;
 }
 
 .footer-left p {
   color: #5c5c5c;
   font-size: 14px;
   margin: 0;
+  padding: 25px 0;
 }
 
 .footer-left p a {
@@ -2417,6 +2427,9 @@ html {
   .main-slider {
     height: auto;
   }
+  .banners img{
+    height: auto;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2484,6 +2497,9 @@ html {
   .contact-area-right {
     margin-top: 40px;
   }
+  .banners img{
+    height: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2536,9 +2552,11 @@ html {
   .footer-left {
     text-align: center;
     margin-bottom: 20px;
+    padding: 25 0px;
   }
   .footer-right {
     text-align: center;
+    padding: 25 0px;
   }
   .portfolio-menu {
     padding: 0;
@@ -2553,6 +2571,9 @@ html {
   .blog-single-social {
     text-align: center;
     margin-top: 20px;
+  }
+  .banners img{
+    height: auto;
   }
 }
 
@@ -2610,9 +2631,11 @@ html {
   .footer-left {
     text-align: center;
     margin-bottom: 20px;
+    padding: 25 0px;
   }
   .footer-right {
     text-align: center;
+    padding: 25 0px;
   }
   #login-form .modal-dialog {
     width: 350px;
@@ -2635,6 +2658,9 @@ html {
   }
   .blog-navigation-prev {
     margin-bottom: 10px;
+  }
+  .banners img{
+    height: auto;
   }
 }
 
@@ -2732,6 +2758,9 @@ html {
     font-size: 12px;
     width: 135%;
   }
+  .banners img{
+    height: auto;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2749,14 +2778,19 @@ html {
   }
   .footer-left p {
     font-size: 12px;
+    padding: 25 0px;
   }
   .footer-right a {
     font-size: 16px;
+    padding: 25 0px;
   }
   .single-item-content::after {
     width: 91%;
   }
   .blog-archive-left .blog-news-img {
     height: 220px;
+  }
+  .banners img{
+    height: auto;
   }
 }
