@@ -923,7 +923,7 @@ img {
 
 #counter {
   background-attachment: fixed !important;
-  background-image: url("assets/images/counter-bg.jpg");
+  background-image: url("assets/images/banner/about\ us.jpg");
   background-repeat: repeat;
   background-size: cover;
   color: #ffffff;
@@ -2829,4 +2829,15 @@ html {
   }
 }
 
+.btnNews{
+  background-color: #DCEBEA; 
+  border: none;
+  color:#444;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
 
