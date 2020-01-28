@@ -417,7 +417,7 @@ img {
 }
 
 #menu-area .navbar-default {
-  background-color: #fff;
+  background-color:#DCEBEA;
   border-color: #fff;
   margin-bottom: 0;
 }
@@ -432,6 +432,7 @@ img {
 
 .navbar-brand:hover,
 .navbar-brand:focus {
+
   text-decoration: none;
   outline: none;
 }
@@ -458,10 +459,13 @@ img {
   width: 100%;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:hover{
+  color: #FFF;
+}
 .navbar-default .navbar-nav > li > a:focus {
   border-top: 0px solid #4396ff;
   background: none;
+  
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -471,7 +475,8 @@ img {
 }
 
 .navbar-nav > li > a::before {
-  background-color: transparent;
+  color: #FFFFFF;
+  background-color: #FFF;
   content: "";
   height: 2px;
   left: 0;
@@ -487,23 +492,33 @@ img {
 .navbar-default .navbar-nav > .active > a::before,
 .navbar-default .navbar-nav > .open > a:hover::before {
   width: 100%;
+  background-color: #FFFFFF;
+
 }
 
 .main-nav .dropdown:hover .dropdown-toggle::before {
+  background-color: #FFF !important;
   width: 100%;
+  
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: transparent;
+  background-color: #FFF !important;
+
 }
 
 .navbar-nav > li > .dropdown-menu li {
   padding: 0;
 }
-
-.dropdown:hover .dropdown-menu {display: block;}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+  color: #FFF !important;
+  background-color:  #5bc1a5 !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;}
 
 .navbar-nav > li > .dropdown-menu > li > a {
   color: #333;
@@ -2454,6 +2469,7 @@ html {
     padding-right: 55px;
   }
   .navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
     font-size: 13px;
     padding-left: 4px;
     padding-right: 4px;
@@ -2539,6 +2555,7 @@ html {
   .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
     background-color: #fff;
+    color: #FFF;
   }
   #search {
     width: 100%;
@@ -2811,3 +2828,5 @@ html {
     height: auto;
   }
 }
+
+
