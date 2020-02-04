@@ -5,12 +5,12 @@ function sendEmail() {
     var body = document.getElementById("body").value;
     Email.send({
         SecureToken: "51b7ddd7-694f-4feb-a277-c636c0a8108f", //This is the token used to encrypt SMTP credentials
-        To: 'admin@unitedaryan.net',
+        To: 'ashfordnokash@gmail.com',
         From: from,
         Subject: subject,
         Body: body
     }).then(
-        // message => alert("Send Succesfully")
+        message => alert("Send Succesfully")
     );
     document.getElementById("form").reset();
 }
