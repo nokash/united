@@ -26,6 +26,9 @@
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
     <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="contact.js"></script>
+
+
     <!-- Fonts -->
 
     <!-- Open Sans for body font -->
@@ -39,9 +42,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script>
-       message => alert("mail sent successfully")
-  </script>
       
   </head>
   <body> 
@@ -258,6 +258,7 @@
             </div>
             
          </div>
+         
          <div class="col-md-12">
            <div class="cotact-area">
              <div class="row">
@@ -277,20 +278,20 @@
                </div>
                <div class="col-md-8">
                  <div class="contact-area-right">
-                   <form id="form" action='submit' method='POST' class="comments-form contact-form">
+                   <form id="form" method="POST" class="comments-form contact-form">
+                    <!-- <div class="form-group">                        
+                      <input type="text" name="Username" class="form-control" placeholder="Your Name">
+                    </div> -->
                     <div class="form-group">                        
-                      <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">                        
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="email" name="email" id="from" class="form-control" placeholder="Email">
                     </div>
                      <div class="form-group">                        
-                      <input type="text" class="form-control" placeholder="Subject">
+                      <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
                     </div>
                     <div class="form-group">                        
-                      <textarea placeholder="Comment" rows="3" class="form-control"></textarea>
+                      <textarea placeholder="Comment" id="body" rows="3" name="message" class="form-control"></textarea>
                     </div>
-                    <button class="comment-btn" type="submit" onclick="sendEmail">Submit Comment</button>
+                    <input type="button" class="comment-btn" value="Send Email" onclick="sendEmail()"/>
                   </form>
                  </div>
                </div>
