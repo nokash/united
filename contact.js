@@ -4,7 +4,9 @@ function sendEmail() {
     var subject = document.getElementById("subject").value;
     var body = document.getElementById("body").value;
     Email.send({
-        SecureToken: "51b7ddd7-694f-4feb-a277-c636c0a8108f", //This is the token used to encrypt SMTP credentials
+        Host: "smtp.elasticemail.com",
+        Username: 'ashfordnokash@gmail.com',
+        Password: "450CA992B178FA37565A5705F44B345A0BF5",
         To: 'ashfordnokash@gmail.com',
         From: from,
         Subject: subject,
