@@ -515,7 +515,7 @@ img {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus{
   color: #FFF !important;
-  background-color:  #5bc1a5 !important;
+  background-color:  #48c35d !important;
 }
 .dropdown:hover .dropdown-menu {
   display: block;}
@@ -549,9 +549,9 @@ img {
 }
 
 .main-slider {
-  display: inline;
+  display: block;
   float: left;
-  height: 700px;
+  height: auto;
   margin-bottom: 0;
   width: 100%;
 }
